@@ -14,11 +14,15 @@ Web API ini memberikan data informasi film dibuat dengan menggunakan Node JS yan
 - https://mariochandra.docs.apiary.io/#reference or [Doc](https://github.com/mario-chandra/UAS-MovieFinder/blob/main/Blueprint.apib)
 - [Architecture Diagram](https://github.com/mario-chandra/UAS-MovieFinder/blob/main/Movie%20Search%20API%20Architecture%20Diagram.pdf)
 
+## Available Api
+- GET /movies/title/{searchTitle}
+- GET /movies/id/{searchId}
+- GET /movies/title/{searchTitle}/{year}
 
 ## How To Run This Project Locally 
-- yarn install
+- npm install
 - start server (node index.js)
 
 ## Dependencies
 - express
-- Nodefetch
+- node-fetch
