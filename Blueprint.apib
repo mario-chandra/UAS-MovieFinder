@@ -1,0 +1,228 @@
+# Documentation for movie Finder
+
+API that i use :
+
+[resource](http://www.omdbapi.com/?apikey=2ee0025f&)
+
+## movies [/movies/title/{movieName}] 
+
+### search by movie name [GET]
+
++ Parameters
+    + movieName 
+        + default: none
+
++ Response 200 (application/json)
+
+    + Body
+            {
+                "Search": [
+                    {
+                    "Title": "Ivan Ironman Stewart's Super Off Road",
+                    "Year": "1989",
+                    "imdbID": "tt0162408",
+                    "Type": "game",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BZDMwMWUyNDAtZmM3Ny00ZGM2LTg5MTItYmZiNzM1NzAyNGJmXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg"
+                    },
+                    {
+                    "Title": "Darasingh: Ironman",
+                    "Year": "1964",
+                    "imdbID": "tt0231426",
+                    "Type": "movie",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BZTVkMmE1OWYtMDdhZC00Mjg2LWEzNzktMWZiMjAxMmU0YTM0XkEyXkFqcGdeQXVyODQwMDcwNDY@._V1_SX300.jpg"
+                    },
+                    {
+                    "Title": "Ironman Triathlon Special",
+                    "Year": "1997",
+                    "imdbID": "tt0311343",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    },
+                    {
+                    "Title": "Road to Ironman",
+                    "Year": "2003",
+                    "imdbID": "tt0382268",
+                    "Type": "movie",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BMzQyNGM0YjItZmEyNS00ODNlLWI3MjgtYmE1MzRjZWJhMGYwL2ltYWdlXkEyXkFqcGdeQXVyMjgyMDM0NDE@._V1_SX300.jpg"
+                    },
+                    {
+                    "Title": "Ironman Triathlon World Championship",
+                    "Year": "1985",
+                    "imdbID": "tt0480409",
+                    "Type": "movie",
+                    "Poster": "https://m.media-amazon.com/images/M/MV5BYjJiOWQwYzEtY2JmZS00NjYyLTkyOGMtOGM5YjQyNjAxZTdhXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_SX300.jpg"
+                    },
+                    {
+                    "Title": "Ironman Triathlon World Championship",
+                    "Year": "2004",
+                    "imdbID": "tt0806096",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    },
+                    {
+                    "Title": "Car and Driver Presents Ivan 'The Ironman' Stewart",
+                    "Year": "1998",
+                    "imdbID": "tt0925222",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    },
+                    {
+                    "Title": "Ironman Triathlon World Championship",
+                    "Year": "2005",
+                    "imdbID": "tt1129377",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    },
+                    {
+                    "Title": "Ironman Triathlon World Championship",
+                    "Year": "2006",
+                    "imdbID": "tt1129378",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    },
+                    {
+                    "Title": "Ironman Triathlon World Championship",
+                    "Year": "2007",
+                    "imdbID": "tt1129379",
+                    "Type": "movie",
+                    "Poster": "N/A"
+                    }
+                ],
+                "totalResults": "27",
+                "Response": "True"
+            }
+
+## movies [/movies/id/{movieId}] 
+
+### Search Movie Detail [GET]
+
++ Parameters
+    + movieId 
+        + default: none
+
++ Response 200 (application/json)
+
+    + Body
+        {
+            "Title": "Ivan Ironman Stewart's Super Off Road",
+            "Year": "1989",
+            "Rated": "N/A",
+            "Released": "01 Apr 1989",
+            "Runtime": "N/A",
+            "Genre": "Sport",
+            "Director": "Medo Moreno, John Rowe, Dan Viescas",
+            "Writer": "John Morgan (concept)",
+            "Actors": "N/A",
+            "Plot": "N/A",
+            "Language": "English",
+            "Country": "USA",
+            "Awards": "N/A",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZDMwMWUyNDAtZmM3Ny00ZGM2LTg5MTItYmZiNzM1NzAyNGJmXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg",
+            "Ratings": [
+                {
+                "Source": "Internet Movie Database",
+                "Value": "7.4/10"
+                }
+            ],
+            "Metascore": "N/A",
+            "imdbRating": "7.4",
+            "imdbVotes": "39",
+            "imdbID": "tt0162408",
+            "Type": "game",
+            "DVD": "N/A",
+            "BoxOffice": "N/A",
+            "Production": "N/A",
+            "Website": "N/A",
+            "Response": "True"
+        }
+    
+## movies [/movies/title/{movieName}/{movieRelease}] 
+
+### Search Movie Detail [GET]
+
++ Parameters
+    + movieName 
+        + default: none
+    + movieRelease(integer)
+        + default: none
+
++ Response 200 (application/json)
+
+    + Body
+        {
+  "Search": [
+                {
+                "Title": "Ivan Ironman Stewart's Super Off Road",
+                "Year": "1989",
+                "imdbID": "tt0162408",
+                "Type": "game",
+                "Poster": "https://m.media-amazon.com/images/M/MV5BZDMwMWUyNDAtZmM3Ny00ZGM2LTg5MTItYmZiNzM1NzAyNGJmXkEyXkFqcGdeQXVyNzg5OTk2OA@@._V1_SX300.jpg"
+                },
+                {
+                "Title": "Darasingh: Ironman",
+                "Year": "1964",
+                "imdbID": "tt0231426",
+                "Type": "movie",
+                "Poster": "https://m.media-amazon.com/images/M/MV5BZTVkMmE1OWYtMDdhZC00Mjg2LWEzNzktMWZiMjAxMmU0YTM0XkEyXkFqcGdeQXVyODQwMDcwNDY@._V1_SX300.jpg"
+                },
+                {
+                "Title": "Ironman Triathlon Special",
+                "Year": "1997",
+                "imdbID": "tt0311343",
+                "Type": "movie",
+                "Poster": "N/A"
+                },
+                {
+                "Title": "Road to Ironman",
+                "Year": "2003",
+                "imdbID": "tt0382268",
+                "Type": "movie",
+                "Poster": "https://m.media-amazon.com/images/M/MV5BMzQyNGM0YjItZmEyNS00ODNlLWI3MjgtYmE1MzRjZWJhMGYwL2ltYWdlXkEyXkFqcGdeQXVyMjgyMDM0NDE@._V1_SX300.jpg"
+                },
+                {
+                "Title": "Ironman Triathlon World Championship",
+                "Year": "1985",
+                "imdbID": "tt0480409",
+                "Type": "movie",
+                "Poster": "https://m.media-amazon.com/images/M/MV5BYjJiOWQwYzEtY2JmZS00NjYyLTkyOGMtOGM5YjQyNjAxZTdhXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_SX300.jpg"
+                },
+                {
+                "Title": "Ironman Triathlon World Championship",
+                "Year": "2004",
+                "imdbID": "tt0806096",
+                "Type": "movie",
+                "Poster": "N/A"
+                },
+                {
+                "Title": "Car and Driver Presents Ivan 'The Ironman' Stewart",
+                "Year": "1998",
+                "imdbID": "tt0925222",
+                "Type": "movie",
+                "Poster": "N/A"
+                },
+                {
+                "Title": "Ironman Triathlon World Championship",
+                "Year": "2005",
+                "imdbID": "tt1129377",
+                "Type": "movie",
+                "Poster": "N/A"
+                },
+                {
+                "Title": "Ironman Triathlon World Championship",
+                "Year": "2006",
+                "imdbID": "tt1129378",
+                "Type": "movie",
+                "Poster": "N/A"
+                },
+                {
+                "Title": "Ironman Triathlon World Championship",
+                "Year": "2007",
+                "imdbID": "tt1129379",
+                "Type": "movie",
+                "Poster": "N/A"
+                }
+            ],
+            "totalResults": "27",
+            "Response": "True"
+            }
+            
