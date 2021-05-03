@@ -11,7 +11,8 @@ Web API ini memberikan data informasi film dibuat dengan menggunakan Node JS yan
 ### - NodeJS
  
 ##Documentation
-- https://mariochandra.docs.apiary.io/#reference
+- https://mariochandra.docs.apiary.io/#reference or [Doc](https://github.com/mario-chandra/UAS-MovieFinder/blob/main/Blueprint.apib)
+- 
 
 
 ## How To Run This Project Locally 
