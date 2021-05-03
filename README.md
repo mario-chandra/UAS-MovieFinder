@@ -9,6 +9,10 @@ Web API ini memberikan data informasi film dibuat dengan menggunakan Node JS yan
 
 ## Requirement 
 ### - NodeJS
+ 
+##Documentation
+- https://mariochandra.docs.apiary.io/#reference
+
 
 ## How To Run This Project Locally 
 - yarn install
